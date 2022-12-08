@@ -62,7 +62,7 @@ $(function() {
     // console.log($('#form_login'));
     $('#form_login').submit(function(e) {
         e.preventDefault();
-
+		// alert(1)
         // 获取表单值
         // var data = $(this).serialize()
 
@@ -73,6 +73,7 @@ $(function() {
             url:'/api/login', 
             data: data,
             success: function(res){
+				// alert('响应成功')
                 // 登录失败
                 if(res.status != 0){
                     return layer.msg(res.message);
@@ -82,7 +83,7 @@ $(function() {
                 localStorage.setItem('token', res.token)
                 // console.log(res.token);
                 // 跳到后台主页
-                location.href = '/font-back/one/大事件项目/index.html?token='+localStorage.getItem('token')
+                location.href = '/font-back/one/大事件项目/index.html'
             }
         })
         
