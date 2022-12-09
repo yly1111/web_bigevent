@@ -18,6 +18,10 @@ iframe {
     height: 100%;
 }
 
+.layui-logo {
+    background-color: #282b33 !important;
+}
+
 .layui-body {
     overflow: hidden;
 }
