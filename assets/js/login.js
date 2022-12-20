@@ -83,7 +83,7 @@ $(function() {
                 localStorage.setItem('token', res.token)
                 // console.log(res.token);
                 // 跳到后台主页
-                location.href = '/font-back/one/大事件项目/index.html'
+                location.href = '/大事件项目/index.html'
             }
         })
         
